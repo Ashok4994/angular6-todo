@@ -33,8 +33,17 @@ toDoListArray: any[];
   }
 
   OnAdd(itemtitle) {
-    this.toDoService.addTitle(itemtitle.value);
-    itemtitle.value = null;
+    if (itemtitle) {
+      this.toDoService.addTitle(itemtitle.value);
+      itemtitle.value = null;
+  }
+}
+
+  alterCheck($key: string, isChecked) {
+  this.toDoService.checkOrUncheckTitle($key, !isChecked);
   }
 
+  deleteItem($key: string) {
+    this.toDoService.removeTitle($key);
+  }
 }
