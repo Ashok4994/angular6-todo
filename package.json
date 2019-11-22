@@ -13,8 +13,8 @@
     },
     "private": true,
     "dependencies": {
-        "angular/cli": "1.4.3",
-        "angular/compiler": "^4.2.4",
+        "@angular/cli": "1.4.3",
+        "@angular/compiler": "^4.2.4",
         "@angular/animations": "^4.0.0",
         "@angular/common": "^4.0.0",
         "@angular/compiler": "^4.0.0",
